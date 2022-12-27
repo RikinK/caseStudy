@@ -1,0 +1,184 @@
+<htmL>
+    <head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <span>
+    <img id="image" src="remote.jpeg" class="img-responsive">
+    <img id="image" src="book.jpeg" class="img-responsive">
+    <img id="image" src="mouse.jpeg" class="img-responsive">
+    <img id="image" src="pillow.jpeg" class="img-responsive">
+    <img id="image" src="scissors.jpeg" class="img-responsive">
+    <img id="image" src="waterbottle.jpeg" class="img-responsive">
+</span>
+<br>
+<br>
+
+  <ol>
+    <div class="image_and_result col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+            <b>Test Image - </b>
+            <img src="waterbottle.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - Water bottle
+                <span></span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - Water bottle
+                <span></span>
+            </h5>
+
+            <br><br> <br><br> <br><br> <br><br>
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - Draw</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+            <div class="image_and_result col-xs-12">
+                <hr>
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="book.jpeg" class="img-responsive">
+                    </li>
+        
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b> - Book
+                        <span></span>
+                    </h5>
+        
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Mobile Net</b> - Television System
+                        <span></span>
+                    </h5>
+        
+                    <br><br> <br><br> <br><br> <br><br>
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result - Google Lens</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                    <div class="image_and_result col-xs-12">
+                        <hr>
+                        <li class="col-sm-4 col-xs-12">
+                            <b>Test Image - </b>
+                            <img src="mouse.jpeg" class="img-responsive">
+                            </li>
+                
+                            <h5 class="col-sm-4 col-xs-12">
+                                Output on <b>Google Lens</b> - Mouse 
+                                <span></span>
+                            </h5>
+                
+                            <h5 class="col-sm-4 col-xs-12">
+                                Output on <b>Mobile Net</b> - Mouse
+                                <span></span>
+                            </h5>
+                
+                            <br><br> <br><br> <br><br> <br><br>
+                            <div class="mini_result" class="col-xs-12">
+                                <h4>Result - Draw</h4>
+                                <hr>
+                                <h4></h4>
+                            </div>
+
+                            <div class="image_and_result col-xs-12">
+                                <hr>
+                                <li class="col-sm-4 col-xs-12">
+                                    <b>Test Image - </b>
+                                    <img src="pillow.jpeg" class="img-responsive">
+                                    </li>
+                        
+                                    <h5 class="col-sm-4 col-xs-12">
+                                        Output on <b>Google Lens</b> - Carpet 
+                                        <span></span>
+                                    </h5>
+                        
+                                    <h5 class="col-sm-4 col-xs-12">
+                                        Output on <b>Mobile Net</b> - Stove
+                                        <span></span>
+                                    </h5>
+                        
+                                    <br><br> <br><br> <br><br> <br><br>
+                                    <div class="mini_result" class="col-xs-12">
+                                        <h4>Result -  Google Lens(more accurate)</h4>
+                                        <hr>
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="image_and_result col-xs-12">
+                                        <hr>
+                                        <li class="col-sm-4 col-xs-12">
+                                            <b>Test Image - </b>
+                                            <img src="remote.jpeg" class="img-responsive">
+                                            </li>
+                                
+                                            <h5 class="col-sm-4 col-xs-12">
+                                                Output on <b>Google Lens</b> - Remote
+                                                <span></span>
+                                            </h5>
+                                
+                                            <h5 class="col-sm-4 col-xs-12">
+                                                Output on <b>Mobile Net</b> - Remote
+                                                <span></span>
+                                            </h5>
+                                
+                                            <br><br> <br><br> <br><br> <br><br>
+                                            <div class="mini_result" class="col-xs-12">
+                                                <h4>Result - Draw</h4>
+                                                <hr>
+                                                <h4></h4>
+                                            </div>
+
+                                            <div class="image_and_result col-xs-12">
+                                                <hr>
+                                                <li class="col-sm-4 col-xs-12">
+                                                    <b>Test Image - </b>
+                                                    <img src="scissors.jpeg" class="img-responsive">
+                                                    </li>
+                                        
+                                                    <h5 class="col-sm-4 col-xs-12">
+                                                        Output on <b>Google Lens</b> - Scissors
+                                                        <span></span>
+                                                    </h5>
+                                        
+                                                    <h5 class="col-sm-4 col-xs-12">
+                                                        Output on <b>Mobile Net</b> - Microphone
+                                                        <span></span>
+                                                    </h5>
+                                        
+                                                    <br><br> <br><br> <br><br> <br><br>
+                                                    <div class="mini_result" class="col-xs-12">
+                                                        <h4>Result -  Google Lens</h4>
+                                                        <hr>
+                                                        <h4></h4>
+                                                    </div>
+
+                                                        <div class="image_and_result col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+            <b>Who Wins? - Google Lens </b>
+
+ 
+            <br><br> <br><br> <br><br> <br><br>
+            <div class="mini_result" class="col-xs-12">
+                <h4>Results - Google Lens has consistently guessed the objects however Mobilenet blundered on a few of the images </h4>
+                <hr>
+                <h4></h4>
+            </div>
+  </ol>
+</body>
+</htmL>
